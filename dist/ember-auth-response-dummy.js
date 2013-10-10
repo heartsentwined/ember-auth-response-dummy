@@ -3,7 +3,7 @@ var get$ = Ember.get;
 Em.onLoad('Ember.Application', function (application) {
   return application.initializer({
     name: 'ember-auth.response.dummy',
-    after: 'ember-auth',
+    before: 'ember-auth-load',
     initialize: function (container, app) {
       return app.register('authResponse:dummy', get$(get$(Em, 'Auth'), 'DummyAuthResponse'));
     }
