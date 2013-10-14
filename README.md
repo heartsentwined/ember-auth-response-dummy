@@ -12,3 +12,8 @@ A response adapter that does nothing - designed for unit tests.
 App.Auth = Em.Auth.extend
   response: 'dummy'
 ```
+
+License
+=======
+
+MIT
